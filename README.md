@@ -1,5 +1,5 @@
 # upload2picbed
-to upload image to the smms picbed
+to upload image to the picbed
 
 # how to install
 `npm i upload2picbed`

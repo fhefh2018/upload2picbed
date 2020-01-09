@@ -1,6 +1,6 @@
 {
     "name": "upload2picbed",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "uploading image to the picbed",
     "main": "index.js",
     "scripts": {
