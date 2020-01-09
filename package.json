@@ -1,0 +1,31 @@
+{
+    "name": "upload2picbed",
+    "version": "1.0.0",
+    "description": "uploading image to the picbed",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fhefh2018/upload2picbed.git"
+    },
+    "keywords": [
+        "upload",
+        "pic",
+        "image",
+        "picbed"
+    ],
+    "author": "Aric",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fhefh2018/upload2picbed/issues"
+    },
+    "homepage": "https://github.com/fhefh2018/upload2picbed#readme",
+    "dependencies": {
+        "axios": "^0.19.1",
+        "form-data": "^3.0.0",
+        "object-assign": "^4.1.1",
+        "user-agents": "^1.0.495"
+    }
+}
