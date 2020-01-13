@@ -48,3 +48,28 @@ uploadResult.then(data => {
   console.log(data.data);
 })
 ```
+
+# support picbed
+### sougou
+```javascript
+//url:http://pic.sogou.com/
+async function sogou() {
+    let uploadResult = await upload(
+        `http://pic.sogou.com/ris_upload?r=${parseInt(Math.random())*10000-1}`, {
+            'pic_path': fs.createReadStream('./2.png')
+        }
+    );
+    //response struct: 
+    // html content
+    // you can use regular to find the url of pic what you need
+    const testData = uploadResult.data;
+    const regex = /<img id="cutImage" src="https:\/\/img\d{1,}.sogoucdn\.com.*\&url=(https?.*)" .* data-load="false"/g;
+    let result = regex.test(testData)
+    let url;
+
+    if (result) {
+        url = decodeURIComponent(RegExp.$1);
+        return url;
+    }
+}
+```
